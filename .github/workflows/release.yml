@@ -14,7 +14,8 @@ jobs:
       contents: write
       # permission for publishing to npm with provenance
       id-token: write
-    run: tag=${GITHUB_REF#refs/tags/}
+    env:
+      tag: ${{ github.ref_name }}
     steps:
       - name: Checkout main
         uses: actions/checkout@v5
