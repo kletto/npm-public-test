@@ -41,4 +41,4 @@ jobs:
             --draft
 
       - name: Publish to npm
-        run: pnpm publish --provenance
+        run: pnpm publish --provenance --access public
