@@ -37,7 +37,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           tag=${GITHUB_REF#refs/tags/}
-		  echo "Tag is $tag"
+          echo "Tag is $tag"
           gh release create $tag \
             --title $tag \
             --notes "Release $tag" \
