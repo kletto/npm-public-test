@@ -14,8 +14,8 @@ jobs:
       contents: write
       # permission for publishing to npm with provenance
       id-token: write
-    env:
-      tag: ${{ github.ref_name }}
+    # env:
+    #   tag: ${{ github.ref_name }}
     steps:
       - name: Checkout main
         uses: actions/checkout@v5
@@ -37,6 +37,7 @@ jobs:
       - name: Create GitHub release
         env:
           GITHUB_TOKEN: ${{ github.token }}
+		  tag: ${{ github.ref_name }}
         run: |
           echo "Tag is $tag"
           gh release create $tag \
