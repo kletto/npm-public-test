@@ -4,5 +4,6 @@
 	"description": "Test package for npm public registry",
 	"main": "index.js",
 	"author": "kletto",
-	"files": ["index.js"]
+	"files": ["index.js"],
+	"repository": "https://github.com/kletto/npm-public-test"
 }
