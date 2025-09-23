@@ -15,9 +15,10 @@ jobs:
       # permission for publishing to npm with provenance
       id-token: write
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v5
-		run: git checkout main
+        with:
+          ref: main
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
