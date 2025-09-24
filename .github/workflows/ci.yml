@@ -26,4 +26,6 @@ jobs:
         run: pnpm install
 
       - name: Check git status
-        run: git status
+        run: |
+          git status
+          git log --oneline -10

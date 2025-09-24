@@ -43,7 +43,9 @@ jobs:
             --draft
 
       - name: Check git status
-        run: git status
+        run: |
+          git status
+          git log --oneline -10
         
       - name: Publish to npm
         env:
