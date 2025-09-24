@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
-        with: { ref: main }
+        # with: { ref: main }
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -42,6 +42,9 @@ jobs:
             --notes "Release $tag" \
             --draft
 
+      - name: Check git status
+        run: git status
+        
       - name: Publish to npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
