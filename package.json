@@ -4,7 +4,6 @@
 	"description": "Test package for npm public registry",
 	"main": "index.js",
 	"author": "kletto",
-	"license": "MIT",
 	"files": [
 		"index.js"
 	],
