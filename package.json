@@ -1,6 +1,6 @@
 {
 	"name": "@kletto/npm-public-test",
-	"version": "0.0.5",
+	"version": "0.0.12",
 	"description": "Test package for npm public registry",
 	"main": "index.js",
 	"author": "kletto",
